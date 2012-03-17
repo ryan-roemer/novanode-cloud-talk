@@ -8,7 +8,7 @@ var app = require('http').createServer(handler),
                                   "redis://127.0.0.1:6379"),
   redisHost = redisUrl.hostname,
   redisPort = redisUrl.port,
-  redisAuth = redisUrl.auth ? redisUrl.auth.split(":")[1] : 0;
+  redisAuth = redisUrl.auth ? redisUrl.auth.split(":")[1] : null;
 
 app.listen(PORT, ADDR);
 console.log("Server running at http://%s:%s/", ADDR, PORT);
