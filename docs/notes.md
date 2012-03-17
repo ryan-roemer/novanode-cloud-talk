@@ -1,6 +1,14 @@
 Notes
 =====
 
+Tasks
+-----
+* Identify good open source redis + fun application (ideally npm install).
+* Research highlights, links for other cloud providers.
+* Add short discussion of raw AWS.
+* Set up gh-pages -> host presentation and demo app pages.
+*
+
 Heroku
 ------
 * Sign up: https://api.heroku.com/signup
@@ -83,6 +91,16 @@ Exercise - Hello World
 * Heroku Bash: Get a bash shell and poke around.
 
         $ heroku run bash
+
+* Scaling:
+
+        $ heroku ps:scale web=1
+
+Advantages
+----------
+* Intelligent routing during application upgrades.
+* Rollback.
+* Integration with AWS. Runs in AWS, and can directly hook to RDS.
 
 Gotchas
 -------
