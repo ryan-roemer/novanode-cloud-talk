@@ -41,7 +41,8 @@ function SessionController (user) {
 
   // Set auth for all connections.
   if (redisAuth) {
-    redis.auth(redisAuth);
+    this.sub.auth(redisAuth);
+    this.pub.auth(redisAuth);
   }
 
 	this.user = user;
