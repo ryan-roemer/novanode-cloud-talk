@@ -32,17 +32,23 @@ io.configure( function() {
 });
 
 function SessionController (user) {
+  var self = this;
+
 	// session controller class for storing redis connections
 	// this is more a workaround for the proof-of-concept
 	// in "real" applications session handling should NOT
 	// be done like this
-	this.sub = redis.createClient(redisPort, redisHost);
-	this.pub = redis.createClient(redisPort, redisHost);
+	self.sub = redis.createClient(redisPort, redisHost);
+	self.pub = redis.createClient(redisPort, redisHost);
 
   // Set auth for all connections.
   if (redisAuth) {
-    this.sub.auth(redisAuth);
-    this.pub.auth(redisAuth);
+    self.sub.on("connect", function () {
+      self.sub.auth(redisAuth);
+    });
+    self.pub.on("connect", function () {
+      self.pub.auth(redisAuth);
+    });
   }
 
 	this.user = user;
