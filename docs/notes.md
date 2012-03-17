@@ -11,6 +11,7 @@ Heroku
 * v0.4.7 by default. Buildpacks for more recent versions.
 * Secrets and process environment.
 * Multiple accounts (link).
+* First dyno for each individual app is free.
 
 Exercise - Hello World
 ----------------------
