@@ -12,7 +12,6 @@ Heroku
 * Secrets and process environment.
 * Multiple accounts (link).
 * First dyno for each individual app is free.
-* Heroku logs.
 
 Exercise - Hello World
 ----------------------
@@ -68,9 +67,29 @@ Exercise - Hello World
         To git@heroku.spanishdict:novanode-cloud-talk.git
          * [new branch]      master -> master
 
+* Check how our application is doing:
+
+        $ heroku ps
+        Process  State      Command
+        -------  ---------  --------------------
+        web.1    up for 1m  node server-hello.js
+
 * Now lets test it out: http://novanode-cloud-talk.herokuapp.com
 
+* Heroku logs: Heroku will log out anything from `console.log` to its logs.
 
+        $ heroku logs
+
+* Heroku Bash: Get a bash shell and poke around.
+
+        $ heroku run bash
+
+Gotchas
+-------
+* Memcached: All add-on's use SASL authentication, but existing Node libraries
+  don't support.
+* Monitoring: Some support, but could use a **lot** more.
+* Outlier Request Latencies: A small fraction of 30 second timeout requests.
 
 
 Other Cloud PAAS
