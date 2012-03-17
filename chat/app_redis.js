@@ -41,11 +41,17 @@ function SessionController (user) {
 	self.sub = redis.createClient(redisPort, redisHost);
   if (redisAuth) {
     self.sub.auth(redisAuth);
+    self.sub.on("ready", function () {
+      self.sub.auth(redisAuth);
+    });
   }
 
   self.pub = redis.createClient(redisPort, redisHost);
   if (redisAuth) {
     self.pub.auth(redisAuth);
+    self.pub.on("ready", function () {
+      self.pub.auth(redisAuth);
+    });
   }
 
 	this.user = user;
