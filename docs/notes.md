@@ -7,7 +7,7 @@ Tasks
 * Research highlights, links for other cloud providers.
 * Add short discussion of raw AWS.
 * Set up gh-pages -> host presentation and demo app pages.
-*
+
 
 Heroku
 ------

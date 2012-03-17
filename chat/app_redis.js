@@ -1,9 +1,12 @@
 var app = require('http').createServer(handler),
 	io = require('socket.io').listen(app),
 	fs = require('fs'),
-	redis = require('redis');
+	redis = require('redis'),
+  ADDR = process.env.ADDRESS || "0.0.0.0",
+  PORT = process.env.PORT || 2000;
 
-app.listen(80);
+app.listen(PORT, ADDR);
+console.log("Server running at http://%s:%s/", ADDR, PORT);
 
 function handler(req, res) {
 	// just return the index HTML
@@ -30,7 +33,7 @@ function SessionController (user) {
 	// be done like this
 	this.sub = redis.createClient();
 	this.pub = redis.createClient();
-	
+
 	this.user = user;
 }
 
