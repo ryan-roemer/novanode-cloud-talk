@@ -5,8 +5,8 @@ var app = require('http').createServer(handler),
   ADDR = process.env.ADDRESS || "0.0.0.0",
   PORT = process.env.PORT || 2000,
   redisUrl = require('url').parse(process.env.REDISTOGO_URL ||
-                                  "redis://" + ADDR + ":" + PORT),
-  redisHostname = redisUrl.hostname,
+                                  "redis://127.0.0.1:6379"),
+  redisHost = redisUrl.hostname,
   redisPort = redisUrl.port,
   redisAuth = redisUrl.auth ? redisUrl.auth.split(":")[1] : 0;
 
@@ -36,8 +36,13 @@ function SessionController (user) {
 	// this is more a workaround for the proof-of-concept
 	// in "real" applications session handling should NOT
 	// be done like this
-	this.sub = redis.createClient();
-	this.pub = redis.createClient();
+	this.sub = redis.createClient(redisPort, redisHost);
+	this.pub = redis.createClient(redisPort, redisHost);
+
+  // Set auth for all connections.
+  if (redisAuth) {
+    redis.auth(redisAuth);
+  }
 
 	this.user = user;
 }
