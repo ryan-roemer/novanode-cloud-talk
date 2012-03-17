@@ -7,19 +7,26 @@ Tasks
 * Research highlights, links for other cloud providers.
 * Add short discussion of raw AWS.
 * Set up gh-pages -> host presentation and demo app pages.
-
+* Try switching to a higher-price RedisToGo for more connections and back.
+* Add library licenses for included code.
 
 Heroku
 ------
+Basics:
+
 * Sign up: https://api.heroku.com/signup
 * Log in: https://api.heroku.com/login
 * Install Heroku: (on Node guide page.)
 * Install NVM: Recommended to deal with multiple versions.
 * Node.js Guide: http://devcenter.heroku.com/articles/nodejs
+
+Advanced, other topics:
+
 * v0.4.7 by default. Buildpacks for more recent versions.
 * Secrets and process environment.
 * Multiple accounts (link).
 * First dyno for each individual app is free.
+* Can use more processors on the underlying EC2 instance with a "cluster" library. Don't necessarily need this for most apps as Node is really light on resource use.
 
 Exercise - Hello World
 ----------------------
@@ -115,6 +122,7 @@ Advantages
 * Intelligent routing during application upgrades.
 * Rollback.
 * Integration with AWS. Runs in AWS, and can directly hook to RDS.
+* Automatic application restarts on crashes.
 
 Gotchas
 -------
@@ -122,6 +130,7 @@ Gotchas
   don't support.
 * Monitoring: Some support, but could use a **lot** more.
 * Outlier Request Latencies: A small fraction of 30 second timeout requests.
+* Add-ons are really costly against self-hosting for many of them.
 
 
 Other Cloud PAAS
@@ -134,6 +143,12 @@ Get a basic overview of these guys going.
 * Nodester
 * NodeJitsu
 
-Misc
-----
-* Add library licenses for included code.
+Host yourself:
+
+* AWS (what we do at SpanishDict).
+* Rackspace
+
+Takeaways
+---------
+* Cloud PAAS services are fantastic for trying node out and prototyping.
+* For long term production applications, may need to go for IAAS, but the cloud is definitely a great option.
