@@ -39,16 +39,13 @@ function SessionController (user) {
 	// in "real" applications session handling should NOT
 	// be done like this
 	self.sub = redis.createClient(redisPort, redisHost);
-	self.pub = redis.createClient(redisPort, redisHost);
-
-  // Set auth for all connections.
   if (redisAuth) {
-    self.sub.on("connect", function () {
-      self.sub.auth(redisAuth);
-    });
-    self.pub.on("connect", function () {
-      self.pub.auth(redisAuth);
-    });
+    self.sub.auth(redisAuth);
+  }
+
+  self.pub = redis.createClient(redisPort, redisHost);
+  if (redisAuth) {
+    self.pub.auth(redisAuth);
   }
 
 	this.user = user;
