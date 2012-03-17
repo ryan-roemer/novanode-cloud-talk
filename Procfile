@@ -1,1 +1,1 @@
-web: node server-hello.js
+web: node chat/app_redis.js
