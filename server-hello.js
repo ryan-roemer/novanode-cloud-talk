@@ -8,6 +8,8 @@ var http = require('http'),
 http.createServer(function (req, res) {
   var randColor = Math.floor(Math.random()*16777215).toString(16);
 
+  console.log("Path: \"" + req.url + "\"")
+
   res.writeHead(200, { 'content-type': "text/html" });
   res.end(
     "<!doctype html>" +
@@ -19,8 +21,9 @@ http.createServer(function (req, res) {
     '    <div class="container"><div class="hero-unit">' +
     "      <h1>Hello!</h1>" +
     "      <p>" +
-    "         Your path is: <b>\"" + req.url + "\"</b>." +
-    "         You're calling from: <b>" + req.client.remoteAddress + "</b>." +
+    "         Your path is: \"<b>" + req.url + "</b>\"." +
+    "         You're calling from: <b>" + req.connection.remoteAddress + "</b>." +
+    "         Your browser identifies as: \"<b>" + req.headers["user-agent"] + "</b>\"." +
     "         Your favorite color is: <span style='background: #" + randColor + "'>" +
     "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" +
     "      </p>" +

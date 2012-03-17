@@ -12,6 +12,7 @@ Heroku
 * Secrets and process environment.
 * Multiple accounts (link).
 * First dyno for each individual app is free.
+* Heroku logs.
 
 Exercise - Hello World
 ----------------------
