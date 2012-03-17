@@ -96,6 +96,20 @@ Exercise - Hello World
 
         $ heroku ps:scale web=1
 
+Chat
+----
+* Document switching Procfile and dev. server.
+* Home: https://addons.heroku.com/redistogo
+* Guide: http://devcenter.heroku.com/articles/redistogo
+* Add redis (only 10 connections for free):
+
+        $ heroku addons:add redistogo:nano
+
+* Credentials: The plugin automatically sets `REDISTOGO_URL`
+
+        $ heroku run env
+
+
 Advantages
 ----------
 * Intelligent routing during application upgrades.

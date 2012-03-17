@@ -3,7 +3,12 @@ var app = require('http').createServer(handler),
 	fs = require('fs'),
 	redis = require('redis'),
   ADDR = process.env.ADDRESS || "0.0.0.0",
-  PORT = process.env.PORT || 2000;
+  PORT = process.env.PORT || 2000,
+  redisUrl = require('url').parse(process.env.REDISTOGO_URL ||
+                                  "redis://" + ADDR + ":" + PORT),
+  redisHostname = redisUrl.hostname,
+  redisPort = redisUrl.port,
+  redisAuth = redisUrl.auth ? redisUrl.auth.split(":")[1] : 0;
 
 app.listen(PORT, ADDR);
 console.log("Server running at http://%s:%s/", ADDR, PORT);
