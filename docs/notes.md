@@ -117,6 +117,11 @@ Chat
 
         $ heroku run env
 
+* Versions:
+
+    * AWS ELB XHR: http://chat.sdsandbox.com/
+    * AWS ELB WS: http://talk.sdsandbox.com/
+    * AWS EC2 WS: http://chat-node.sdsandbox.com:2000/
 
 Advantages
 ----------
