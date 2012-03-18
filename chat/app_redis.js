@@ -8,23 +8,33 @@ var app = require('http').createServer(handler),
                                   "redis://127.0.0.1:6379"),
   redisHost = redisUrl.hostname,
   redisPort = redisUrl.port,
-  redisAuth = redisUrl.auth ? redisUrl.auth.split(":")[1] : null;
+  redisAuth = redisUrl.auth ? redisUrl.auth.split(":")[1] : null,
+  stashedIndex = null;
 
 app.listen(PORT, ADDR);
 console.log("Server running at http://%s:%s/", ADDR, PORT);
 
 function handler(req, res) {
 	// just return the index HTML
-	fs.readFile(__dirname + '/index.html',
-	function (err, data) {
-		if (err) {
-			res.writeHead(500);
-			return res.end('Error loading index.html');
-		}
+  var pageFn = function (err, data) {
+    if (err) {
+      res.writeHead(500);
+      return res.end('Error loading index.html');
+    }
 
-		res.writeHead(200);
-		res.end(data);
-	});
+    if (!stashedIndex) {
+      stashedIndex = data;
+    }
+
+    res.writeHead(200);
+    res.end(data);
+  };
+
+  if (!stashedIndex) {
+    fs.readFile(__dirname + '/index.html', pageFn);
+  } else {
+    pageFn(null, stashedIndex);
+  }
 }
 
 io.configure(function () {
