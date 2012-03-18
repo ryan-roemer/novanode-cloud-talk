@@ -1,4 +1,7 @@
 <h1>Chat based on Node.js using Redis Pub/Sub + socket.io</h1>
+
+From: https://github.com/steffenwt/nodejs-pub-sub-chat-demo
+
 Simple application based to show Redis Pub/Sub mechanism together with Node.js and socket.io.
 
 <h1>How to get the application running</h1>
