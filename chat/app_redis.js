@@ -40,11 +40,8 @@ function handler(req, res) {
 io.configure(function () {
 	io.set('close timeout', 60*60*24); // 24h time out
 
-  if (process.env.REDISTOGO_URL) {
-    // Heroku doesn't support websockets, so let's tune long polling.
-    io.set("transports", ["xhr-polling"]);
-    io.set("polling duration", 2);
-  }
+  // Heroku doesn't support websockets, so let's tune long polling.
+  io.set("polling duration", 2);
 });
 
 function SessionController (user) {
