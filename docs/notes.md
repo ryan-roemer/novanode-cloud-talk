@@ -9,6 +9,7 @@ Tasks
 * Set up gh-pages -> host presentation and demo app pages.
 * Try switching to a higher-price RedisToGo for more connections and back.
 * Add library licenses for included code.
+* Deploy on raw AWS.
 
 Heroku
 ------
@@ -131,6 +132,7 @@ Gotchas
 * Monitoring: Some support, but could use a **lot** more.
 * Outlier Request Latencies: A small fraction of 30 second timeout requests.
 * Add-ons are really costly against self-hosting for many of them.
+* No websockets! (yet)
 
 
 Other Cloud PAAS
