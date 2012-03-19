@@ -7,10 +7,14 @@ talk, "Getting started with Node.js in the Cloud".
 
 Licenses
 ========
-All demo code not otherwise specified is Copyright 2012 Ryan Roemer. Released
-under MIT License.
+All demo / slide code not otherwise specified is Copyright 2012 Ryan Roemer.
+Released under the MIT License.
 
 The "chat/" demo application is taken from `steffenwt`'s'
 [nodejs-pub-sub-chat-demo][redis_chat] project.
 
+[deck.js][deckjs] is Copyright Caleb Troughton and dual licensed under the
+MIT and GPL licenses.
+
 [redis_chat]: https://github.com/steffenwt/nodejs-pub-sub-chat-demo
+[deckjs]: https://github.com/imakewebthings/deck.js
