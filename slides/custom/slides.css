@@ -1,0 +1,19 @@
+@charset "UTF-8";
+.deck-container {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 1.25em;
+}
+
+.deck-container h1 {
+  font-size: 4em;
+}
+
+.deck-container section {
+  font-size: 1.2em;
+}
+
+.deck-container ul,
+.deck-container ol,
+.deck-container p {
+  font-size: 1.3em;
+}
