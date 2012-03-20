@@ -14,7 +14,7 @@ http.createServer(function (req, res) {
     "  </head>" +
     "  <body>" +
     '    <div class="container"><div class="hero-unit">' +
-    "      <h1>Hello!</h1>" +
+    "      <h1>Hello World!</h1>" +
     "      <p>" +
     "         Your path is: \"<b>" + req.url + "</b>\"." +
     "         You're calling from: <b>" + req.connection.remoteAddress + "</b>." +
