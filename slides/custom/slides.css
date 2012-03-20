@@ -1,4 +1,9 @@
 @charset "UTF-8";
+
+a, a:active, a:visited, a:hover {
+  text-decoration: none;
+}
+
 .deck-container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 1.25em;
@@ -37,6 +42,31 @@ div.CodeMirror,
   font-size: 3em;
 }
 
-a, a:active, a:visited, a:hover {
+#conclusion div {
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+#conclusion div a,
+a#talk {
+  color: inherit;
   text-decoration: none;
+  padding: 0 0.1em;
+  background: rgba(200,200,200,0.5);
+  text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+  border-radius: 0.2em;
+
+  -webkit-transition: 0.5s;
+  -moz-transition:    0.5s;
+  -ms-transition:     0.5s;
+  -o-transition:      0.5s;
+  transition:         0.5s;
+}
+
+#conclusion div a:hover,
+a:hover#talk {
+    background: rgba(50,50,50,1);
+    color: #cfcfcf;
+    text-shadow: -1px -1px 2px rgba(25,25,25,0.5);
 }
