@@ -18,7 +18,7 @@
   font-size: 1.3em;
 }
 
-.slide img {
+.slide img.bordered {
   border: 1px solid #ccc;
 }
 
