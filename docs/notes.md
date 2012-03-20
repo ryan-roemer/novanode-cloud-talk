@@ -1,7 +1,7 @@
 Notes
 =====
 
-Tasks
+Tasks (TODO)
 -----
 * Research highlights, links for other cloud providers.
 * Add short discussion of raw AWS.
@@ -23,7 +23,7 @@ Basics:
 * Install NVM: Recommended to deal with multiple versions.
 * Node.js Guide: http://devcenter.heroku.com/articles/nodejs
 
-Advanced, other topics:
+Advanced, other topics: (TODO)
 
 * v0.4.7 by default. Buildpacks for more recent versions.
 * Secrets and process environment.

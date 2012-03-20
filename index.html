@@ -190,7 +190,8 @@
   <p>Here is everyone's <em>first</em> Node.js application:</p>
   <div>
     <div id="code" name="code" class="code" mode="javascript" style="display: none;"
->var http = require('http');
+>// Run with: `node server-hello.js`
+var http = require('http');
 
 http.createServer(function (req, res) {
   res.writeHead(200, {
@@ -199,7 +200,7 @@ http.createServer(function (req, res) {
   res.end("<h1>Hello World!</h1>")
 }).listen(2001);</div>
   </div>
-  <br /><br />
+  <br />
   <p>
     Let's try it in
     <a href="http://127.0.0.1:2001">development</a>...
@@ -210,9 +211,34 @@ http.createServer(function (req, res) {
   </p>
 </section>
 
+<section class="slide" id="package-app">
+  <h2>Package the App</h2>
+  <p>
+    We have to package things up appropriately.
+  </p>
+  <ul>
+    <li>
+      Create a Git repository.
+      (<a href="https://github.com/ryan-roemer/novanode-cloud-talk"
+      >github.com/ryan-roemer/novanode-cloud-talk</a>)
+    </li>
+    <li>Add a &quot;<code>package.json</code>&quot; file.</li>
+    <li>Add a Heroku &quot;<code>Procfile</code>&quot; file.</li>
+  </ul>
+  <pre><code>web: node server-hello.js</code></pre>
+  <p>
+    This tells Heroku to run &quot;<code>server-hello.js</code>&quot;
+    as a Node.js web application.
+  </p>
+</section>
+
 <section class="slide" id="deploy-app">
   <h2>Deployment</h2>
-  <p>TODO SLIDE</p>
+  <p>
+    Now that we've tested our application, we're ready for prime time!
+  </p>
+  <pre><code>
+</code></pre>
 </section>
 
 <section class="slide" id="app-checks">
