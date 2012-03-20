@@ -18,11 +18,16 @@
   <link rel="stylesheet" href="./slides/extensions/status/deck.status.css">
   <link rel="stylesheet" href="./slides/extensions/hash/deck.hash.css">
 
-  <link rel="stylesheet" href="./slides/themes/style/web-2.0.css">
   <link rel="stylesheet" href="./slides/themes/transition/horizontal-slide.css">
 
   <link rel="stylesheet" href="./slides/plugins/codemirror/deck.codemirror.css">
+  <link rel="stylesheet" href="./slides/plugins/codemirror/themes/elegant.css">
+<!--
+  <link rel="stylesheet" href="./slides/plugins/codemirror/themes/cobalt.css">
   <link rel="stylesheet" href="./slides/plugins/codemirror/themes/default.css">
+  <link rel="stylesheet" href="./slides/plugins/codemirror/themes/neat.css">
+  <link rel="stylesheet" href="./slides/plugins/codemirror/themes/night.css">
+-->
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js"></script>
 </head>
@@ -45,7 +50,9 @@
   <div>
     <div id="code" name="code" class="code" mode="javascript" style="display: none;">// codemirror demo party!
 var myVariable = "Correctly cased?";
-Yo!</div>
+var fooBar = function () {
+  return true ? "wow" : 1;
+}</div>
   </div>
 </section>
 
@@ -83,13 +90,19 @@ Yo!</div>
 <script src="./slides/plugins/codemirror/mode/javascript/javascript.js"></script>
 <script src="./slides/plugins/codemirror/deck.codemirror.js"></script>
 
-
-
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
 	$(function() {
-		$.deck('.slide');
-	});
+		$.deck('.slide', {
+      codemirror: {
+        lineNumbers: false,
+        theme: "elegant",
+        indentUnit: 2,
+        indentWithTabs: false,
+        runnable: false
+      }
+    });
+  });
 </script>
 </body>
 </html>
