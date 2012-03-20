@@ -5,7 +5,7 @@
 }
 
 .deck-container h1 {
-  font-size: 4em;
+  font-size: 3.2em;
 }
 
 .deck-container section {
@@ -16,4 +16,8 @@
 .deck-container ol,
 .deck-container p {
   font-size: 1.3em;
+}
+
+.slide img {
+  border: 1px solid #ccc;
 }
