@@ -15,9 +15,8 @@ http.createServer(function (req, res) {
     "  <body>" +
     '    <div class="container" style="width: 600px;"><div class="hero-unit">' +
     "      <h1 style='text-align: center;'>Hello World!</h1><br />" +
-    "      <p>Your path is: \"<b>" + req.url + "</b>\"" +
-    "         and you're calling from: <b>" + req.connection.remoteAddress + "</b>.</p>" +
-    "      <p>Your browser identifies as: \"<b>" + req.headers["user-agent"].substr(0, 60) + " ...</b>\".</p>" +
+    "      <p>You're calling from: <strong>" + req.connection.remoteAddress + "</strong>.</p>" +
+    "      <p>Your browser identifies as: \"<strong>" + req.headers["user-agent"].substr(0, 60) + " ...</strong>\".</p>" +
     "      <p>Your favorite color is: <span style='background: #" + randColor + "'>" +
     "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>" +
     '    </div></div>' +
