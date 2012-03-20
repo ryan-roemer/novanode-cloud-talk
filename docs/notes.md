@@ -25,7 +25,7 @@ Basics:
 
 Advanced, other topics: (TODO)
 
-* v0.4.7 by default. Buildpacks for more recent versions.
+* v0.4.7 by default (now v0.6.13). Buildpacks for more recent versions.
 * Secrets and process environment.
 * Multiple accounts (link).
 * First dyno for each individual app is free.
