@@ -1,12 +1,18 @@
 spawn = require('child_process').spawn
-print = (data) -> console.log data.toString()
 
-task 'dev:hello', 'Run "Hello World" development server', () ->
-  ps = spawn "nodemon", ["server-hello.js"]
+# Helpers
+print = (data) -> console.log data.toString()
+nodemon = (script) ->
+  ps = spawn "nodemon", [script]
   ps.stdout.on "data", print
   ps.stderr.on "data", print
+
+# Tasks
+task 'dev:hello', 'Run "Hello World #1" development server', () ->
+  nodemon "server-hello.js"
+
+task 'dev:hello2', 'Run "Hello World #2" development server', () ->
+  nodemon "server-hello2.js"
 
 task 'dev:chat', 'Run chat development server', () ->
-  ps = spawn "nodemon", ["chat/app_redis.js"]
-  ps.stdout.on "data", print
-  ps.stderr.on "data", print
+  nodemon "chat/app_redis.js"
