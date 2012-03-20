@@ -315,10 +315,25 @@ http.createServer(function (req, res) {
   </p>
 </section>
 
-<section class="slide" id="redis-addon">
-  <h2>Redis Add-on</h2>
-  <p>TODO SLIDE</p>
+<section class="slide" id="chat-prepare">
+  <h2>Prepare our Chat App</h2>
+
+  <span>
+    Add the <a href="https://addons.heroku.com/redistogo">Redis To Go</a>
+    add-on.
+  </span>
+  <pre><code>$ heroku addons:add redistogo:nano</code></pre>
+
+  <span>
+    Update our &quot;<code>Procfile</code>&quot; to point to the chat
+    server:
+  </span>
+  <pre><code>web: node chat/app_redis.js</code></pre>
+
+  <span>Deploy!</span>
+  <pre><code>$ git push heroku master</code></pre>
 </section>
+
 
 <section class="slide" id="heroku-chat">
   <h2>Heroku Chat</h2>
