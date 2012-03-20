@@ -6,9 +6,7 @@ var http = require('http'),
   PORT = process.env.PORT || 2000;
 
 http.createServer(function (req, res) {
-  var randColor = Math.floor(Math.random()*16777215).toString(16);
-
-  console.log("Path: \"" + req.url + "\"")
+  var randColor = ('00000' + (Math.random()*16777216<<0).toString(16)).substr(-6);
 
   res.writeHead(200, { 'content-type': "text/html" });
   res.end(
