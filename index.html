@@ -30,17 +30,36 @@
 	</nav>
 </header>
 
-<section class="slide">
-  <h1>First Slide!</h1>
-  <p>Awesomeness awaits.</p->
+<section class="slide" id="title-slide">
+  <h1>Getting Started with Node.js in the Cloud</h1>
 </section>
 
 <section class="slide">
   <h1>Second Slide!</h1>
-  <p>Fun.</p->
+  <p>Fun.</p>
 </section>
 
-<!-- Other extension HTML snippets go here, at the bottom of the deck container. -->
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+  <span class="deck-status-current"></span>
+  /
+  <span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+  <label for="goto-slide">Go to slide:</label>
+  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+  <datalist id="goto-datalist"></datalist>
+  <input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
 
 <!-- Late-bind JavaScript -->
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
