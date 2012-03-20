@@ -149,7 +149,10 @@
         <a href="http://git-scm.com/">git</a>.</li>
     <li>Pay-per-use model.</li>
     <li>Scalable web and worker servers.</li>
-    <li>Numerous add-ons (database, mail, logging, etc. services).</li>
+    <li>
+      Numerous
+      <a href="https://addons.heroku.com/">add-ons</a>
+      (database, mail, logging, etc. services).</li>
     <li>Integrated in the Amazon Web Services cloud.</li>
   </ul>
   <img src="./slides/custom/heroku-logo-light-300x100.png" alt="Heroku logo" />
@@ -157,12 +160,44 @@
 
 <section class="slide" id="heroku-setup">
   <h2>Hooking up Heroku</h2>
-  <p>TODO SLIDE</p>
+  <p>
+    Heroku provides an excellent Node.js guide that can get you up and running.
+    (<a href="http://devcenter.heroku.com/articles/nodejs"
+      >devcenter.heroku.com/articles/nodejs</a>)
+  </p>
+  <ul>
+    <li>
+      <strong>Sign up</strong>:
+      <a href="https://api.heroku.com/signup">api.heroku.com/signup</a>
+    </li>
+    <li>
+      <strong>Log in</strong>:
+      <a href="https://api.heroku.com/login">api.heroku.com/login</a>
+    </li>
+    <li>
+      <strong>Install Heroku</strong>: (<em>See Node guide</em>)
+    </li>
+    <li>
+      <strong>Install NVM</strong>:
+      <a href="https://github.com/creationix/nvm">github.com/creationix/nvm</a>
+      (<em>Highly recommended</em>)
+    </li>
+  </ul>
 </section>
 
 <section class="slide" id="example-app">
   <h2>Hello World!</h2>
-  <p>TODO SLIDE</p>
+  <div>
+    <div id="code" name="code" class="code" mode="javascript" style="display: none;"
+>var http = require('http');
+
+http.createServer(function (req, res) {
+  res.writeHead(200, {
+    'content-type': "text/html"
+  });
+  res.end("<h1>Hello World!</h1>")
+}).listen(2000);</div>
+  </div>
 </section>
 
 <section class="slide" id="deploy-app">
@@ -186,7 +221,7 @@
 </section>
 
 <section class="slide" id="redis-addon">
-  <h2>Redis Addon</h2>
+  <h2>Redis Add-on</h2>
   <p>TODO SLIDE</p>
 </section>
 
@@ -209,18 +244,6 @@
 <section class="slide" id="example-app">
   <h2>Wrapping up the Cloud</h2>
   <p>TODO SLIDE -- What we saw, what we did.</p>
-</section>
-
-<section class="slide" id="markup">
-  <h2>TODO Code</h2>
-  <p>TODO text.</p>
-  <div>
-    <div id="code" name="code" class="code" mode="javascript" style="display: none;">// codemirror demo party!
-var myVariable = "Correctly cased?";
-var fooBar = function () {
-  return true ? "wow" : 1;
-}</div>
-  </div>
 </section>
 
 <!-- deck.navigation snippet -->

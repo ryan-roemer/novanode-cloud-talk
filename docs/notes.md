@@ -8,7 +8,9 @@ Tasks
 * Set up gh-pages -> host presentation and demo app pages.
 * Try switching to a higher-price RedisToGo for more connections and back.
 * Add library licenses for included code.
-
+* GitHub banner.
+* Slide URL.
+* Other links.
 
 
 Heroku
