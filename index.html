@@ -283,8 +283,27 @@ http.createServer(function (req, res) {
 </section>
 
 <section class="slide" id="chat-app">
-  <h2>Our Chat Server</h2>
-  <p>TODO SLIDE</p>
+  <h2>Chat Server</h2>
+  <p>
+    Hello world is scalable, but not useful.
+    Let's try something that leverages Node.js's strengths:
+    <strong>chat!</strong>
+  </p>
+  <ul>
+    <li>
+      <a href="https://github.com/steffenwt/nodejs-pub-sub-chat-demo">nodejs-pub-sub-chat-demo</a>
+    </li>
+    <li>
+      Simple
+      <a href="https://github.com/ryan-roemer/novanode-cloud-talk/blob/master/chat/index.html">HTML/JS client</a> and
+      <a href="https://github.com/ryan-roemer/novanode-cloud-talk/blob/master/chat/app_redis.js">Node.js server</a>.
+    </li>
+    <li>
+      Uses <a href="http://redis.io/">Redis</a>'
+      <a href="http://redis.io/topics/pubsub">Pub/Sub</a> feature to
+      allow clients to subscribe to channels and publish messages.
+    </li>
+  </ul>
 </section>
 
 <section class="slide" id="redis-addon">
