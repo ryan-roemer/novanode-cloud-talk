@@ -180,7 +180,7 @@
     <li>
       <strong>Install NVM</strong>:
       <a href="https://github.com/creationix/nvm">github.com/creationix/nvm</a>
-      (<em>Highly recommended</em>)
+      (<em>Highly recommended for development</em>)
     </li>
   </ul>
 </section>
@@ -235,7 +235,7 @@ http.createServer(function (req, res) {
 <section class="slide" id="deploy-app">
   <h2>Deployment</h2>
   <p>
-    Now that we've tested our app, we're ready for prime time!
+    Now that we've developed our app, we're ready for prime time!
   </p>
 
   <span>Create the Heroku application:</span>
@@ -251,7 +251,7 @@ http.createServer(function (req, res) {
 <section class="slide" id="app-checks">
   <h2>We're Live!</h2>
   <p>
-    We're now serving "hello world" goodness at:
+    Get ready for "hello world" goodness at:
     <a href="http://novanode.herokuapp.com/">novanode.herokuapp.com</a>
   </p>
 
@@ -269,7 +269,17 @@ http.createServer(function (req, res) {
 
 <section class="slide" id="app-scale">
   <h2>Let's Scale!</h2>
-  <p>TODO SLIDE - application scale</p>
+  <p>Scaling with Heroku is incredibly easy and fast.</p>
+
+  <span>&quot;<a href="http://en.wikipedia.org/wiki/Up_to_eleven"
+    >These go to eleven.</a>&quot;</span>
+  <pre><code>$ heroku ps:scale web=11</code></pre>
+
+  <span>Review our massive service:</span>
+  <pre><code>$ heroku ps</code></pre>
+
+  <span>But let's not get carried away:</span>
+  <pre><code>$ heroku ps:scale web=1</code></pre>
 </section>
 
 <section class="slide" id="chat-app">

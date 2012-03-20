@@ -23,14 +23,6 @@ Basics:
 * Install NVM: Recommended to deal with multiple versions.
 * Node.js Guide: http://devcenter.heroku.com/articles/nodejs
 
-Advanced, other topics: (TODO)
-
-* v0.4.7 by default (now v0.6.13). Buildpacks for more recent versions.
-* Secrets and process environment.
-* Multiple accounts (link).
-* First dyno for each individual app is free.
-* Can use more processors on the underlying EC2 instance with a "cluster" library. Don't necessarily need this for most apps as Node is really light on resource use.
-
 Exercise - Hello World
 ----------------------
 * Create app in Git.
@@ -124,6 +116,16 @@ Chat
     * AWS ELB XHR: http://chat.sdsandbox.com/
     * AWS ELB WS: http://talk.sdsandbox.com/
     * AWS EC2 WS: http://chat-node.sdsandbox.com:2000/
+
+
+Advanced, other topics (TODO)
+----------------------
+
+* v0.4.7 by default (now v0.6.13). Buildpacks for more recent versions.
+* Secrets and process environment.
+* Multiple accounts (link).
+* First dyno for each individual app is free.
+* Can use more processors on the underlying EC2 instance with a "cluster" library. Don't necessarily need this for most apps as Node is really light on resource use.
 
 Advantages
 ----------
