@@ -185,8 +185,9 @@
   </ul>
 </section>
 
-<section class="slide" id="example-app">
+<section class="slide" id="hello-app">
   <h2>Hello World!</h2>
+  <p>Here is everyone's <em>first</em> Node.js application:</p>
   <div>
     <div id="code" name="code" class="code" mode="javascript" style="display: none;"
 >var http = require('http');
@@ -196,8 +197,17 @@ http.createServer(function (req, res) {
     'content-type': "text/html"
   });
   res.end("<h1>Hello World!</h1>")
-}).listen(2000);</div>
+}).listen(2001);</div>
   </div>
+  <br /><br />
+  <p>
+    Let's try it in
+    <a href="http://127.0.0.1:2001">development</a>...
+  </p>
+  <p>
+    And, let's see a <em>slightly</em> more
+    <a href="http://127.0.0.1:2000">enhanced version</a>...
+  </p>
 </section>
 
 <section class="slide" id="deploy-app">
