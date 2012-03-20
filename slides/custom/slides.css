@@ -21,3 +21,13 @@
 .slide img {
   border: 1px solid #ccc;
 }
+
+.slide .link {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+}
+
+a, a:active, a:visited, a:hover {
+  text-decoration: none;
+}
