@@ -334,13 +334,37 @@ http.createServer(function (req, res) {
   <pre><code>$ git push heroku master</code></pre>
 </section>
 
-
 <section class="slide" id="heroku-chat">
   <h2>Heroku Chat</h2>
-  <p>TODO SLIDE -- notice "xhr-polling"</p>
+  <p>
+    And we're up at
+    <a href="http://novanode.herokuapp.com/">novanode.herokuapp.com</a>.
+  </p>
+  <p>
+    However, we're now using AJAX long-polling, which leads us into...
+  </p>
 </section>
 
+<section class="slide" id="paas-disads">
+  <h2 style="font-size: 2em;">Heroku / PAAS Gotcha's</h2>
+  <ul>
+    <li>Lack of <strong>websockets</strong> support.</li>
+    <li><strong>Expense</strong> of scaling the core service and add-on's.</li>
+    <li>Outlier request <strong>latencies</strong>.</li>
+    <li>
+      <strong>Integrating</strong> Node.js with add-on's / services.
+      (Memcached).
+    </li>
+    <li>Limited monitoring, <strong>system insight</strong>.</li>
+  </ul>
+</section>
 
+<section class="slide" id="paas-advs">
+  <h2 style="font-size: 2em;">Heroku / PAAS Benefits</h2>
+  <ul>
+    <li>XXX</li>
+  </ul>
+</section>
 
 
 
