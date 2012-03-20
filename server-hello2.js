@@ -1,6 +1,6 @@
 var http = require('http'),
   ADDR = process.env.ADDRESS || "0.0.0.0",
-  PORT = process.env.PORT || 2000;
+  PORT = process.env.PORT || 2002;
 
 http.createServer(function (req, res) {
   var randColor = ('00000' + (Math.random()*16777216<<0).toString(16)).substr(-6);

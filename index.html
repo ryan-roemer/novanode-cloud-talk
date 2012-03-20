@@ -207,7 +207,7 @@ http.createServer(function (req, res) {
   </p>
   <p>
     And, let's see a <em>slightly</em> more
-    <a href="http://127.0.0.1:2000">enhanced version</a>...
+    <a href="http://127.0.0.1:2002">enhanced version</a>...
   </p>
 </section>
 
@@ -303,7 +303,16 @@ http.createServer(function (req, res) {
       <a href="http://redis.io/topics/pubsub">Pub/Sub</a> feature to
       allow clients to subscribe to channels and publish messages.
     </li>
+    <li>
+      Lots of connections that we'll leave open.
+      Clients will use websockets, AJAX long-polling, etc. with
+      <a href="http://socket.io/">Socket.IO</a>.
+    </li>
   </ul>
+  <p>
+    Let's try it out in
+    <a href="http://127.0.0.1:2000">development</a>...
+  </p>
 </section>
 
 <section class="slide" id="redis-addon">
