@@ -16,5 +16,9 @@ The "chat/" demo application is taken from `steffenwt`'s'
 [deck.js][deckjs] is Copyright Caleb Troughton and dual licensed under the
 MIT and GPL licenses.
 
+The [CodeMirror deck.js extension][cd] is Copyright Irene Ros and dual licensed
+under the MIT and GPL licenses.
+
 [redis_chat]: https://github.com/steffenwt/nodejs-pub-sub-chat-demo
 [deckjs]: https://github.com/imakewebthings/deck.js
+[cd]: https://github.com/iros/deck.js-codemirror
