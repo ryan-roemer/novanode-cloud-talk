@@ -18,6 +18,10 @@
   font-size: 1.3em;
 }
 
+.deck-container span {
+  font-size: 1.1em;
+}
+
 div.CodeMirror,
 .deck-container pre {
   font-size: 1.1em;

@@ -235,10 +235,17 @@ http.createServer(function (req, res) {
 <section class="slide" id="deploy-app">
   <h2>Deployment</h2>
   <p>
-    Now that we've tested our application, we're ready for prime time!
+    Now that we've tested our app, we're ready for prime time!
   </p>
-  <pre><code>
-</code></pre>
+
+  <span>Create the Heroku application:</span>
+  <pre><code>$ heroku create --stack cedar</code></pre>
+
+  <span>Rename the application:</span>
+  <pre><code>$ heroku rename helloirific</code></pre>
+
+  <span>Deploy!</span>
+  <pre><code>$ git push heroku master</code></pre>
 </section>
 
 <section class="slide" id="app-checks">
