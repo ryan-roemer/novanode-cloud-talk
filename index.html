@@ -93,20 +93,31 @@
 <section class="slide" id="use-cases">
   <h2>Use Cases</h2>
   <ul>
-    <li>Real-time web applications (websockets).</li>
-    <li>Mobile application backends (lightweight).</li>
-    <li>API endpoints (evented, asynchronous).</li>
+    <li>Real-time web applications.</li>
+    <li>
+      Mobile application backends.
+      (<a href="http://engineering.linkedin.com/tags/nodejs"
+        >LinkedIn Mobile</a>)
+    </li>
+    <li>
+      API endpoints.
+      (<a href="http://www.ebaytechblog.com/2011/11/30/announcing-ql-io/"
+        >eBay + ql.io</a>)
+    </li>
   </ul>
-  <p>LinkedIn Mobile, Joyent Infrastructure API (lookup)</p>
   <img class="bordered"
        src="./slides/custom/suggest.png" alt="Application traffic" />
 </section>
 
 <section class="slide" id="example-app">
   <h2>Anti-Use Cases</h2>
-  <p>TODO SLIDE</p>
+  <p>Some situations where Node.js <em>may</em> not be the best choice.</p>
+  <ul>
+    <li>CPU-bound applications.</li>
+    <li>Simple CRUD applications.</li>
+    <li>Need a library in a specific language.</li>
+  </ul>
 </section>
-
 
 <section class="slide" id="paas-providers">
   <h2>PAAS Providers</h2>
