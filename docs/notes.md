@@ -3,14 +3,8 @@ Notes
 
 Tasks (TODO)
 -----
-* Research highlights, links for other cloud providers.
-* Add short discussion of raw AWS.
 * Set up gh-pages -> host presentation and demo app pages.
-* Try switching to a higher-price RedisToGo for more connections and back.
-* Add library licenses for included code.
 * GitHub banner.
-* Slide URL.
-* Other links.
 
 
 Heroku
@@ -118,7 +112,7 @@ Chat
     * AWS EC2 WS: http://chat-node.sdsandbox.com:2000/
 
 
-Advanced, other topics (TODO)
+Advanced, other topics
 ----------------------
 
 * v0.4.7 by default (now v0.6.13). Buildpacks for more recent versions.
