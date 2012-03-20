@@ -5,6 +5,14 @@ talk, "Getting started with Node.js in the Cloud".
 
 [nova_node]: http://www.meetup.com/Nova-Node/events/52749282/
 
+Running the Dev. Servers
+========================
+Cake tasks wrap up some helpful dev. server commands:
+
+    cake dev:hello            # Run "Hello World #1" development server
+    cake dev:hello2           # Run "Hello World #2" development server
+    cake dev:chat             # Run chat development server
+
 Licenses
 ========
 All demo / slide code not otherwise specified is Copyright 2012 Ryan Roemer.
