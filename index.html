@@ -347,6 +347,7 @@ http.createServer(function (req, res) {
 
 <section class="slide" id="paas-disads">
   <h2 style="font-size: 2em;">Heroku / PAAS Gotcha's</h2>
+  <p>Sometimes you have to go with an IAAS or self-managed system.</p>
   <ul>
     <li>Lack of <strong>websockets</strong> support.</li>
     <li><strong>Expense</strong> of scaling the core service and add-on's.</li>
@@ -361,13 +362,37 @@ http.createServer(function (req, res) {
 
 <section class="slide" id="paas-advs">
   <h2 style="font-size: 2em;">Heroku / PAAS Benefits</h2>
+  <p>But you can get a lot done in the Node.js PAAS ecosphere.</p>
   <ul>
-    <li>XXX</li>
+    <li>Automatic application restarts on crashes.</li>
+    <li>Intelligent routing during application upgrades.</li>
+    <li>Rollback.</li>
+    <li>Integration with AWS. Runs in AWS, and can directly hook to RDS.</li>
+    <li>Takes care of virtually all operations issues.</li>
+    <li>First web server on <em>each</em> application is free!</li>
   </ul>
 </section>
 
-
-
+<section class="slide" id="cloud-wrap-up">
+  <h2>Wrapping up the Cloud</h2>
+  <ul>
+    <li>
+      For prototyping and lightning speed development, Node.js PAAS
+      services are often the winning ticket.
+    </li>
+    <li>
+      For production, you'll often need look to IAAS providers.
+      We run in the Amazon cloud, and our Node.js apps run with low system
+      resource usage and minimal latency, and we have full control over our
+      systems.
+    </li>
+    <li>
+      But like Node.js itself, offerings in the cloud are evolving at a
+      rapid pace, so be sure to check your options when you decide where and
+      how to roll out your Node.js applications.
+    </li>
+  </ul>
+</section>
 
 <section class="slide" id="example-app">
   <h2>Reflections as a Node Developer</h2>
@@ -375,9 +400,9 @@ http.createServer(function (req, res) {
      Other languages, etc.</p>
 </section>
 
-<section class="slide" id="example-app">
-  <h2>Wrapping up the Cloud</h2>
-  <p>TODO SLIDE -- What we saw, what we did.</p>
+<section class="slide" id="conclusion">
+  <h2>Thanks!</h2>
+  <p>TODO SLIDE -- Info, URLs, contact.</p>
 </section>
 
 <!-- deck.navigation snippet -->
